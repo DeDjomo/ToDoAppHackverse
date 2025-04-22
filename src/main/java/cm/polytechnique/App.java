@@ -8,6 +8,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import cm.polytechnique.model.data.User;
+
 /**
  * JavaFX App
  */
@@ -32,7 +34,9 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        User user = new User("abc", "abc@gmail.com", "12345");
+        System.out.println(user.delete());
+        //launch();
     }
 
 }
