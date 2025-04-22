@@ -8,6 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import cm.polytechnique.model.server.Formatter;
+import cm.polytechnique.model.server.User;
+import cm.polytechnique.model.server.UserSender;
+
 /**
  * JavaFX App
  */
@@ -31,8 +35,11 @@ public class App extends Application {
         return fxmlLoader.load();
     }
 
-    public static void main(String[] args) {
-        launch();
+    public static void main(String[] args) throws Exception{
+        User user = new User("djomo", "Tek@mail.com", "mot");
+        String string = Formatter.formatUser(user);
+        System.out.println(UserSender.postUser(string));
+        //launch();
     }
 
 }
