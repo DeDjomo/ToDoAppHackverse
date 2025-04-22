@@ -1,4 +1,14 @@
+cm/polytechnique/model/server/PersonnalProjectSender.class
+cm/polytechnique/model/server/Team.class
+cm/polytechnique/model/server/Task.class
+cm/polytechnique/model/server/SingleTaskSender.class
+cm/polytechnique/model/server/User.class
+cm/polytechnique/model/server/TeamSender.class
 cm/polytechnique/PrimaryController.class
 module-info.class
 cm/polytechnique/App.class
 cm/polytechnique/SecondaryController.class
+cm/polytechnique/model/server/PersonnalProject.class
+cm/polytechnique/model/server/UserSender.class
+cm/polytechnique/model/server/Sender.class
+cm/polytechnique/model/server/Formatter.class
