@@ -1,0 +1,50 @@
+.button_ {
+    -fx-background-color: #bf00bf;
+}
+
+.button_:hover {
+    -fx-background-color: #ea4eea;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+.label_ {
+    -fx-text-fill: #bf00bf;
+}
+
+.label_:hover {
+    -fx-text-fill: #ff55ff;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+
+.field:hover{
+    -fx-font-weight: bold;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.mot_de_passe:hover{
+    -fx-text-fill: #bf00bf;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.button_x{
+    -fx-background-color:#ff6262;
+    -fx-background-radius:20px;
+}
+.button_x:hover{
+    -fx-background-radius:20px;
+    -fx-text-fill: white;
+    -fx-background-color:red;
+}
+
+.scrollpane .viewport {
+    -fx-background-color: #ffe6ff;
+}
+

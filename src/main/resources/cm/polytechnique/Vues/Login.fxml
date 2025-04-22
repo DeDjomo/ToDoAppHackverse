@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.polytechnique.Controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <StackPane prefHeight="1080.0" prefWidth="1920.0">
+               <children>
+                  <ImageView fx:id="fond" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" />
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white; -fx-background-radius: 50px;">
+                     <children>
+                        <AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-radius: 50px; -fx-background-color: #bf00bf;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0">
+                     <children>
+                        <AnchorPane fx:id="create_pane" layoutX="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" stylesheets="@../Styles.css" visible="false">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="100.0" layoutY="153.0" prefHeight="60.0" prefWidth="400.0" text="Create new account">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="1.0" blue="0.9833333492279053" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <TextField fx:id="username1" alignment="CENTER" focusTraversable="false" layoutX="100.0" layoutY="276.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" promptText="Username" style="-fx-background-radius: 30; -fx-background-color: white;" styleClass="mot_de_passe">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                              <TextField fx:id="email1" alignment="CENTER" focusTraversable="false" layoutX="100.0" layoutY="370.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" promptText="Email" style="-fx-background-radius: 30; -fx-background-color: white;" styleClass="mot_de_passe">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                              <PasswordField fx:id="password1" alignment="CENTER" focusTraversable="false" layoutX="100.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" promptText="Password" style="-fx-background-radius: 30; -fx-background-color: white;" styleClass="mot_de_passe">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </PasswordField>
+                              <Button fx:id="create_button" focusTraversable="false" layoutX="100.0" layoutY="595.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#on_action_create" prefHeight="60.0" prefWidth="400.0" style="-fx-background-radius: 30;" styleClass="button_" text="Create Account">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label layoutX="211.0" layoutY="679.0" prefHeight="36.0" prefWidth="126.0" text="already a user ?">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="Login_label" layoutX="337.0" layoutY="679.0" onMouseClicked="#on_clicked_login" prefHeight="36.0" prefWidth="52.0" styleClass="label_" text="LOGIN" textFill="#bf00bf" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="already_pane" layoutX="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" stylesheets="@../Styles.css">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="100.0" layoutY="153.0" prefHeight="60.0" prefWidth="400.0" text=" Welcome Back">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="1.0" blue="0.9833333492279053" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <TextField fx:id="mail2" alignment="CENTER" focusTraversable="false" layoutX="108.0" layoutY="287.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" promptText="Email" style="-fx-background-radius: 30; -fx-background-color: white;" styleClass="field">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                              <PasswordField fx:id="password2" alignment="CENTER" focusTraversable="false" layoutX="108.0" layoutY="383.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="400.0" promptText="Password" style="-fx-background-radius: 30; -fx-background-color: white;" styleClass="field">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </PasswordField>
+                              <Label layoutX="335.0" layoutY="470.0" onMouseClicked="#on_clicked_forgot_password" prefHeight="36.0" prefWidth="193.0" styleClass="mot_de_passe" text="forgot your password ?">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="Login_button" focusTraversable="false" layoutX="195.0" layoutY="557.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#on_action_login" prefHeight="60.0" prefWidth="211.0" style="-fx-background-radius: 30;" styleClass="button_" text="Login">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label layoutX="193.0" layoutY="654.0" prefHeight="36.0" prefWidth="141.0" text="need an account ?">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="334.0" layoutY="654.0" onMouseClicked="#on_clicked_signUp" prefHeight="36.0" prefWidth="76.0" styleClass="label_" text="SIGN UP" textFill="#bf00bf" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
